@@ -1,6 +1,11 @@
-function addItem(node, list)
+function createItem()
 {
     let item = new Object();
-    item.name = prompt("Task: ", "");
-    item.time = prompt("Time: ", "");
+    item.time = input("Time: ", "");
+    return item;
+}
+
+function createList()
+{
+    let list = new Array(); list.push(createItem());
 }
